@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Color Emoji", "Quicksand", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: #4F709C;
+  font-weight: bold;
+  cursor: default;
+  overflow: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5EFE7;
+}
+
+button {
+  background-color: #4F709C;
+  color: #F5EFE7;
+  font-size: 25px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #213555;
+  transform: translateY(2px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.start {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 50px;
+  font-size: 80px;
+  text-shadow: 2px 2px #cfc9c2;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-shadow: 2px 2px #cfc9c2;
+}
+
+.players {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.human, .computer {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 150px;
+  align-items: center;
+}
+
+.human-health, .computer-health {
+  font-size: 25px;
+}
+
+#choices {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#computer-choice, #player-choice {
+  font-size: 75px;
+}
+
+.end {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  text-shadow: 2px 2px #cfc9c2;
+}
+
+#winner {
+  font-size: 75px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+  background-color: #D8C4B6;
+}
+
+footer > div {
+  font-family: "Quicksand", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
